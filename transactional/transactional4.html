@@ -27,8 +27,8 @@
         }
        
     }
-    @media only screen and (max-width:360px) {
-
+    @media only screen and (max-width:400px) {
+        .transaction-detail-right-td,.transaction-detail-left-td{max-width:100%!important;}
     .transaction-detail-right-column{
             float: left !important;
         }
@@ -139,7 +139,7 @@ border-spacing:0px">
             border-spacing:0px;float:left">
 
                             <tr style="border-collapse:collapse">
-                                <td style="padding:0;Margin:0;width:100%;max-width: 150px;">
+                                <td class="transaction-detail-left-td" style="padding:0;Margin:0;width:100%;max-width: 150px;">
                                     <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
                      border-spacing:0px;">
                                         <tr style="border-collapse:collapse">
@@ -208,7 +208,7 @@ border-spacing:0px">
                             align="right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
             border-spacing:0px;float:right">
                             <tr style="border-collapse:collapse">
-                                <td class="transaction-detail-right-padd"
+                                <td class="transaction-detail-right-padd  transaction-detail-right-td"
                                     style="padding:0;Margin:0;width:100%;max-width: 150px;">
                                     <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
                      border-spacing:0px">
@@ -526,4 +526,4 @@ line-height:24px;color:#222222;font-size:18px;font-weight: 700;">
 <![endif]-->
         </td>
     </tr>
-</table>
+</table>  
