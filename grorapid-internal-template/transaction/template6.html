@@ -51,12 +51,12 @@ padding: 0;Margin:0 auto;width:100%;max-width: 600px;">
                                             <td style="padding:0; " class="gr-element">
                                                 <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none; mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
                                     line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
-                                                   Hi *|CONTACT.FIRSTNAME|*
+                                                    Hi *|CONTACT.FIRSTNAME|*
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;padding-top: 5px;" class="gr-element">
+                                            <td style="padding:5px 0 0;" class="gr-element">
                                                 <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none; mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
                                     line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
                                                     Thanks for using [Product Name]. This is an invoice for your recent
@@ -65,7 +65,7 @@ padding: 0;Margin:0 auto;width:100%;max-width: 600px;">
                                             </td>
                                         </tr>
                                         <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;padding-top: 20px;" class="gr-element">
+                                            <td style="padding:20px 0 0;" class="gr-element">
                                                 <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
                                                 line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
                                                     <span style="font-weight: 600;">Amount Due: </span>{{total}}
@@ -73,7 +73,7 @@ padding: 0;Margin:0 auto;width:100%;max-width: 600px;">
                                             </td>
                                         </tr>
                                         <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;padding-top: 5px;" class="gr-element">
+                                            <td style="padding:5px 0 0;" class="gr-element">
                                                 <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
                                                 line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
                                                     <span style="font-weight: 600;">Due By: </span>{{due_date}}
@@ -89,7 +89,8 @@ padding: 0;Margin:0 auto;width:100%;max-width: 600px;">
                                     <table width="100%" cellspacing="0" cellpadding="0" role="presentation"
                                         style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse; border-spacing:0px;">
                                         <tr style="border-collapse:collapse">
-                                            <td style="padding: 0;padding-top:40px;Margin:0; " align="center" class="gr-element">
+                                            <td style="padding:40px 0 0;Margin:0; " align="center"
+                                                class="gr-element">
                                                 <table role="presentation" cellpadding="0" cellspacing="0"
                                                     style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                     <tr style="border-collapse:collapse">
@@ -110,239 +111,259 @@ padding: 0;Margin:0 auto;width:100%;max-width: 600px;">
                         </table>
                     </td>
                 </tr>
-                <tr style="border-collapse:collapse">
+            </table>
+            <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+                        border-spacing:0px;">
+                <tr style="border-collapse:collapse;">
                     <td class="gr-container " align="center" bgcolor="#ffffff"
-                        style="padding:0 40px;Margin:0;width:100%;max-width: 560px;background-color: #ffffff;">
+                        style="padding:20px 40px 0;Margin:0;width:100%;max-width: 560px;background-color: #ffffff;">
+                        <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="max-width: 520px;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+                                            border-spacing:0px">
+                            <tr style="border-collapse:collapse;">
+                                <td align="left" style="Margin:0;padding:10px;" class="gr-element">
+                                    <h1
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif;line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
+                                        {{receipt_id}}
+                                    </h1>
+                                </td>
+                                <td align="right" style="Margin:0;padding:10px;" class="gr-element">
+                                    <h1
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif;line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
+                                        {{date}}
+                                    </h1>
+                                </td>
+                            </tr>
+                            <tr style="border-collapse:collapse;">
+                                <td align="left" style="Margin:0;padding:10px; " class="gr-element">
+                                    <h1
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                 mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
+                                        {{#each receipt_details}} {{/each}}
+                                    </h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+            border-spacing:0px;">
+                <tr style="border-collapse:collapse;">
+                    <td class="gr-container " align="center" bgcolor="#ffffff"
+                        style="padding:10px 40px 0;Margin:0;width:100%;max-width: 560px;background-color: #ffffff;">
+                        <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="width:100%;max-width: 560px;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+                                            border-spacing:0px">
+                            <tr style="border-collapse:collapse;">
+                                <td align="left" bgcolor="#FFFFFF" class="l-infoblock"
+                                    style="Margin:0;padding:10px; background-color: #FFFFFF;border-left-width: 1px; border-left-style: solid; border-left-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
+                                    <h1
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
+                                        Description
+                                    </h1>
+                                </td>
+                                <td align="right" bgcolor="#FFFFFF" class="r-infoblock"
+                                    style="Margin:0;padding:10px; background-color: #FFFFFF;border-right-width: 1px; border-right-style: solid; border-right-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
+                                    <h1
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
+                                        Amount
+                                    </h1>
+                                </td>
+                            </tr>
+                            <tr style="border-collapse:collapse;border: 1px solid #E0E0E0;">
+                                <td align="left" bgcolor="#FFFFFF" class="l-infoblock"
+                                    style="Margin:0;padding:10px; background-color: #FFFFFF;border-left-width: 1px; border-left-style: solid; border-left-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
+                                    <h1
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                            mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#333333;font-size:12px;font-weight: 600;">
+                                        {{description}}
+                                    </h1>
+                                </td>
+                                <td align="right" bgcolor="#FFFFFF" class="r-infoblock"
+                                    style="Margin:0;padding:10px; background-color: #FFFFFF;border-right-width: 1px; border-right-style: solid; border-right-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
+                                    <h1
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                                 mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#333333;font-size:12px;font-weight: 600;">
+                                        {{amount}}
+                                    </h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+border-spacing:0px;">
+                <tr style="border-collapse:collapse;">
+                    <td class="gr-container " align="right" bgcolor="#ffffff"
+                        style="padding:10px 40px 0;Margin:0;width:100%;max-width: 560px;background-color: #ffffff;">
                         <table role="presentation" cellpadding="0" cellspacing="0"
                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                             <tr style="border-collapse:collapse;">
-                                <td class="gr-column " align="left"
-                                    style="padding:20px 0 0;Margin:0;width:100%;max-width: 520px;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="width:100%;max-width: 520px;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
-                                            border-spacing:0px">
-                                        <tr style="border-collapse:collapse;">
-                                            <td align="left" style="Margin:0;padding:10px;" class="gr-element">
-                                                <h1
-                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif;line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
-                                                    {{receipt_id}}
-                                                </h1>
+                                <td style="padding:0;" align="right" class="gr-element">
+                                    <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
+                                                        line-height:19px;color:#00C4CC;font-size:12px;font-weight: 600;">
+                                        <span style="color:#333333;margin-right:15px;">Total </span>
+                                        <!--[if gte mso 9]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->{{total}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+border-spacing:0px;">
+                <tr style="border-collapse:collapse;">
+                    <td class="gr-container " align="center" bgcolor="#ffffff"
+                        style="padding:0 40px ;Margin:0;width:100%;max-width: 560px;background-color: #ffffff;">
+                        <table role="presentation" cellpadding="0" cellspacing="0"
+                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                            <tr style="border-collapse:collapse">
+                                <td align="center" class="gr-column" style="font-size:0;padding:20px 0 20px;">
+                                    <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="gr-line-breaker"
+                                                    style="border-bottom: 2px solid #F0F0F0; background:none; height:1px; width:520px; margin:0px 0px 0px 0px;">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+border-spacing:0px;">
+                <tr style="border-collapse:collapse;">
+                    <td class="gr-container " align="left" bgcolor="#ffffff"
+                        style="padding:0 40px 20px;Margin:0;width:100%;max-width: 560px;background-color: #ffffff;">
+                        <table role="presentation" cellpadding="0" cellspacing="0"
+                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                            <tr style="border-collapse:collapse;">
+                                <td style="padding:10px 0 0; " class="gr-element">
+                                    <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
+                                                        line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
+                                        If you have any questions about this receipt, simply reply to this
+                                        email or
+                                        reach out to our support team for help.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style="border-collapse:collapse;">
+                                <td style="padding:20px 0 0;" class="gr-element">
+                                    <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
+                                                            line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
+                                        Cheers,
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style="border-collapse:collapse;">
+                                <td style="padding:4px 0 0;" class="gr-element">
+                                    <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
+                                                        line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
+                                        The [Product Name] Team
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
+border-spacing:0px;">
+                <tr style="border-collapse:collapse;">
+                    <td class="gr-container " align="center" bgcolor="#ffffff"
+                        style="padding:20px 40px ;Margin:0;width:100%;max-width: 560px;background-color: #ffffff;">
+                        <table role="presentation" cellpadding="0" border="0" cellspacing="0" style="mso-table-lspace:0pt;
+                                    mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                            <tr style="border-collapse:collapse;">
+                                <td style="padding:0;Margin:0;border: 0;" class="gr-social-links">
+                                    <table class="social-link" cellspacing="0" cellpadding="0" role="presentation"
+                                        align="center"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                        <tr style="border-collapse:collapse">
+                                            <td valign="top" style="padding:0 10px 0 0; Margin:0;"
+                                                class="gr-element">
+                                                <a target="_blank" href="https://www.grorapid.com/"
+                                                    style="display: block;padding: 2px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                                mso-line-height-rule:exactly;text-decoration:none;color:#586087;font-size:13px;mso-ansi-font-size:14px;">
+                                                    <img title="Facebook"
+                                                        src="https://grorapidassets.s3.amazonaws.com/eassets/social-links/b-fb.png"
+                                                        alt="Tw" width="32"
+                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
+                                                </a>
                                             </td>
-                                            <td align="right" style="Margin:0;padding:10px;" class="gr-element">
-                                                <h1
-                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif;line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
-                                                    {{date}}
-                                                </h1>
+                                            <td valign="top" style="padding:0 10px 0 0; Margin:0;"
+                                                class="gr-element">
+                                                <a target="_blank" href="https://www.grorapid.com/"
+                                                    style="display: block;padding: 2px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                                mso-line-height-rule:exactly;text-decoration:none;color:#586087;font-size:13px;mso-ansi-font-size:14px;">
+                                                    <img title="Twitter"
+                                                        src="https://grorapidassets.s3.amazonaws.com/eassets/social-links/b-tw.png"
+                                                        alt="Fb" width="32"
+                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
+                                                </a>
                                             </td>
-                                        </tr>
-                                        <tr style="border-collapse:collapse;">
-                                            <td align="left" style="Margin:0;padding:10px; " class="gr-element">
-                                                <h1
-                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                 mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
-                                                    {{#each receipt_details}} {{/each}}
-                                                </h1>
+                                            <td valign="top" style="padding:0;Margin:0;" class="gr-element">
+                                                <a target="_blank" href="https://www.grorapid.com/"
+                                                    style="display: block;padding: 2px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                                                    mso-line-height-rule:exactly;text-decoration:none;color:#586087;font-size:13px;mso-ansi-font-size:14px;">
+                                                    <img title="Instagram"
+                                                        src="https://grorapidassets.s3.amazonaws.com/eassets/social-links/b-in.png"
+                                                        alt="Yt" width="32"
+                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
+                                                </a>
                                             </td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr style="border-collapse:collapse;">
-                                <td class="gr-column " align="left"
-                                    style="padding:10px 0 0;Margin:0;width:100%;max-width: 520px;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="width:100%;max-width: 560px;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;
-                                            border-spacing:0px">
-                                        <tr style="border-collapse:collapse;">
-                                            <td align="left" bgcolor="#FFFFFF" class="l-infoblock"
-                                                style="Margin:0;padding:10px; background-color: #FFFFFF;border-left-width: 1px; border-left-style: solid; border-left-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
-                                                <h1
-                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
-                                                    Description
-                                                </h1>
-                                            </td>
-                                            <td align="right" bgcolor="#FFFFFF" class="r-infoblock"
-                                                style="Margin:0;padding:10px; background-color: #FFFFFF;border-right-width: 1px; border-right-style: solid; border-right-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
-                                                <h1
-                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                        mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#4F4F4F;font-size:12px;font-weight: 400;">
-                                                    Amount
-                                                </h1>
-                                            </td>
-                                        </tr>
-                                        <tr style="border-collapse:collapse;border: 1px solid #E0E0E0;">
-                                            <td align="left" bgcolor="#FFFFFF" class="l-infoblock"
-                                                style="Margin:0;padding:10px; background-color: #FFFFFF;border-left-width: 1px; border-left-style: solid; border-left-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
-                                                <h1
-                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                            mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#333333;font-size:12px;font-weight: 600;">
-                                                    {{description}}
-                                                </h1>
-                                            </td>
-                                            <td align="right" bgcolor="#FFFFFF" class="r-infoblock"
-                                                style="Margin:0;padding:10px; background-color: #FFFFFF;border-right-width: 1px; border-right-style: solid; border-right-color: #E0E0E0;border-top-width: 1px; border-top-style: solid; border-top-color: #E0E0E0;border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E0E0E0;">
-                                                <h1
-                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                                 mso-line-height-rule:exactly;font-family:Open Sans , sans-serif; line-height:16px;color:#333333;font-size:12px;font-weight: 600;">
-                                                    {{amount}}
-                                                </h1>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="border-collapse:collapse">
-                                <td class="gr-container" align="right"
-                                    style="padding: 10px 0 0;Margin:0;width:100%;max-width: 520px;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0"
-                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;" align="right" class="gr-element">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
-                                                        line-height:19px;color:#00C4CC;font-size:12px;font-weight: 600;">
-                                                    <span style="color:#333333;margin-right:15px;">Total </span>
-                                                    <!--[if gte mso 9]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->{{total}}
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="border-collapse:collapse">
-                                <td class="gr-container" align="left"
-                                    style="padding: 0 0 0;Margin:0;width:100%;max-width: 520px;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0"
-                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                        <tr style="border-collapse:collapse">
-                                            <td align="center" class="gr-column"
-                                                style="font-size:0;padding:20px 0 20px;">
-                                                <table border="0" width="100%" height="100%" cellpadding="0"
-                                                    cellspacing="0">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="gr-line-breaker"
-                                                                style="border-bottom: 2px solid #F0F0F0; background:none; height:1px; width:520px; margin:0px 0px 0px 0px;">
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="border-collapse:collapse">
-                                <td class="gr-container" align="left"
-                                    style="padding: 0 0 20px;Margin:0;width:100%;max-width: 520px;">
-                                    <table role="presentation" cellpadding="0" cellspacing="0"
-                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;padding-top: 10px; " class="gr-element">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
-                                                        line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
-                                                    If you have any questions about this receipt, simply reply to this
-                                                    email or
-                                                    reach out to our support team for help.
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;padding-top: 20px;" class="gr-element">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
-                                                            line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
-                                                    Cheers,
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;padding-top: 4px;" class="gr-element">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
-                                                        line-height:19px;color:#4f4f4f;font-size:14px;font-weight: 400;">
-                                                    The [Product Name] Team
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="border-collapse:collapse">
-                                <td class="gr-column" align="center"
-                                    style="padding:20px 0;Margin:0;width:100%;max-width: 520px;">
-                                    <table role="presentation" cellpadding="0" border="0" cellspacing="0" style="mso-table-lspace:0pt;
-                                    mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;Margin:0;border: 0;" class="gr-social-links">
-                                                <table class="social-link" cellspacing="0" cellpadding="0"
-                                                    role="presentation" align="center"
-                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                    <tr style="border-collapse:collapse">
-                                                        <td valign="top" style="padding:0;Margin:0;padding-right:10px" class="gr-element">
-                                                            <a target="_blank" href="https://www.grorapid.com/"
-                                                                style="display: block;padding: 2px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                                mso-line-height-rule:exactly;text-decoration:none;color:#586087;font-size:13px;mso-ansi-font-size:14px;">
-                                                                <img title="Facebook"
-                                                                    src="https://grorapidassets.s3.amazonaws.com/eassets/social-links/b-fb.png"
-                                                                    alt="Tw" width="32"
-                                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
-                                                            </a>
-                                                        </td>
-                                                        <td valign="top" style="padding:0;Margin:0;padding-right:10px" class="gr-element">
-                                                            <a target="_blank" href="https://www.grorapid.com/"
-                                                                style="display: block;padding: 2px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                                mso-line-height-rule:exactly;text-decoration:none;color:#586087;font-size:13px;mso-ansi-font-size:14px;">
-                                                                <img title="Twitter"
-                                                                    src="https://grorapidassets.s3.amazonaws.com/eassets/social-links/b-tw.png"
-                                                                    alt="Fb" width="32"
-                                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
-                                                            </a>
-                                                        </td>
-                                                        <td valign="top" style="padding:0;Margin:0;" class="gr-element">
-                                                            <a target="_blank" href="https://www.grorapid.com/"
-                                                                style="display: block;padding: 2px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
-                                                                    mso-line-height-rule:exactly;text-decoration:none;color:#586087;font-size:13px;mso-ansi-font-size:14px;">
-                                                                <img title="Instagram"
-                                                                    src="https://grorapidassets.s3.amazonaws.com/eassets/social-links/b-in.png"
-                                                                    alt="Yt" width="32"
-                                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;Margin:0;padding-top:10px;border: 0;" class="gr-element" align="center">
-                                                <p style="Margin:0;padding: 0; -webkit-text-size-adjust:none;-ms-text-size-adjust:none; mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
+                                <td style="padding:10px 0 0; Margin:0;border: 0;" class="gr-element"
+                                    align="center">
+                                    <p
+                                        style="Margin:0;padding: 0; -webkit-text-size-adjust:none;-ms-text-size-adjust:none; mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
                                                         line-height:16px;color:#828282;font-size:12px;font-weight: normal;">
-                                                    2021 © All Rights Reserved
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;Margin:0;padding-top:10px;border: 0;" class="gr-element" align="center">
-                                                <p style="Margin:0;padding: 0;
+                                        2021 © All Rights Reserved
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style="border-collapse:collapse;">
+                                <td style="padding:10px 0 0; Margin:0;border: 0;" class="gr-element"
+                                    align="center">
+                                    <p style="Margin:0;padding: 0;
                                                     -webkit-text-size-adjust:none;-ms-text-size-adjust:none;
                                                     mso-line-height-rule:exactly;font-family:Open Sans, sans-serif;
                                                     line-height:16px;color:#828282;font-size:12px;font-weight: 400;">
-                                                    Write your company address here
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr style="border-collapse:collapse;">
-                                            <td style="padding:0;Margin:0;border: 0;padding-top: 30px;" align="center" class="gr-element">
-                                                <p style="Margin:0;-webkit-text-size-adjust:none;
+                                        Write your company address here
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr style="border-collapse:collapse;">
+                                <td style="padding:30px 0 0; border:0;" align="center"
+                                    class="gr-element">
+                                    <p
+                                        style="Margin:0;-webkit-text-size-adjust:none;
                                             -ms-text-size-adjust:none;mso-line-height-rule:exactly;
                                             font-family:Open Sans, sans-serif;line-height:18px;color:#333333;font-size:12px;">
-                                                    <a href="*|unsubscribelink|*" target="_blank" class="view"
-                                                        style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
+                                        <a href="*|unsubscribelink|*" target="_blank" class="view"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;
                                                         mso-line-height-rule:exactly;text-decoration:underline;color:#333333;
                                                         font-size:12px;line-height: 18px; font-family:Open Sans, sans-serif;font-weight: 600;">Unsubscribe</a>
-                                                </p>
-                                                <p style="line-height: 2px; font-size: 2px; margin: 0;">&nbsp;</p>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    </p>
+                                    <p style="line-height: 2px; font-size: 2px; margin: 0;">&nbsp;</p>
                                 </td>
                             </tr>
                         </table>
